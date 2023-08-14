@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Mohammad AbuJaber</title>
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">Mohammad AbuJaber</a>
+        <a href="index.html" class="logo">Mohammad AbuJaber</a>
         <nav class="navBar">
             <a href="#aboutMe">About Me</a>
             <a href="#projects">Projects</a>
@@ -48,6 +49,87 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+    <section class="contact section" id="contact">
+        <h2 class="sectionTitle">Contact Me</h2>
+        <span class="sectionSubTitle">Get in Touch</span>
+        <div class="contactContainer container grid sectionBorder">
+            <div class="contactContent">
+                <h3 class="contactTitle">
+                    <i class="fa-regular fa-comment"></i> Talk to me
+                </h3>
+                <div class="contactInfo">
+                    <div class="contactData">
+                        <a href="mailto:mohammadabujaber2001@gmail.com" class="contactTitle" target="_blank">Send an
+                            Email <i class="fa-regular fa-envelope"></i></a>
+                    </div>
+
+                    <div class="contactData">
+                        <a href="https://wa.me/+970599745046/?text=Your%20projects%20capture%20my%20attention."
+                            class="contactTitle" target="_blank">whatsapp <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+
+                    <div class="contactData">
+                        <a href="tel:+970599745046" class="contactTitle" target="_blank">Call Me <i
+                                class="ri-phone-line"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contactContent">
+            <h3 class="contactTitle">
+                <i class="ri-send-plane-line"></i> Write me what you want
+            </h3>
+
+            <form action="" class="contactForm" id="contactForm">
+
+                <div class="contactFormDiv">
+                    <label class="contactFormTag">Names</label>
+                    <input type="text" name="userName" required placeholder="Write Your Name" class="contactFormInput"
+                        id="contactName">
+                </div>
+
+                <div class="contactFormDiv">
+                    <label class="contactFormTag">Mail</label>
+                    <input type="text" name="userMail" required placeholder="Write Your Mail" class="contactFormInput"
+                        id="contactMail">
+                </div>
+
+                <div class="contactFormDiv contactFormArea">
+                    <label class="contactFormTag">Message</label>
+                    <textarea name="userMessage" required placeholder="Write Your Message" id="contactMessage"
+                        class="contactFormInput"></textarea>
+
+                </div>
+
+                <button type="submit" id="sendButton" class="sendButton">
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Send</span>
+                </button>
+
+            </form>
+        </div>
+
+        </div>
+    </section>
+
 </body>
 
 </html>
