@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 
-header{
+header {
     background-color: #f0f0f0;
     width: 100%;
     position: fixed;
@@ -19,14 +19,14 @@ header{
     padding: 10px 200px;
 }
 
-.logo{
+.logo {
     text-decoration: none;
     color: #3a6cf4;
     font-weight: 700;
     font-size: 1.8em;
 }
 
-.navBar a{
+.navBar a {
     color: #3a6cf4;
     text-decoration: none;
     font-size: 1.1em;
@@ -34,6 +34,142 @@ header{
     padding-left: 30px;
 }
 
-.navBar a:hover{
+.navBar a:hover {
     color: #082f9a;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.cover {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/backgroundCover.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cover h2 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.cover h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.cover h3 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.cover-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.cover-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+/* Social */
+.card {
+    display: flex;
+    height: 70px;
+    width: 270px;
+}
+
+.card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.card .gitHub,
+.card .linkedIn,
+.card .facebook {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+
+.card svg {
+    transform: scale(1);
+}
+
+.card .gitHub:hover {
+    background-color: #1a1e22;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .linkedIn:hover {
+    background-color: #0a66c2;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .facebook:hover {
+    background-color: #0059f7;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+    background-color: #1d4292;
+    animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
