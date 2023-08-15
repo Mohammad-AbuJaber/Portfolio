@@ -399,6 +399,7 @@ section {
     justify-content: space-between;
     align-items: center;
     height: 90px;
+    margin-bottom: 0;
 }
 
 .footer-title {
@@ -410,13 +411,6 @@ section {
     color: #3a6cf4;
 }
 
-.footer .card{
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    height: 2rem;
-    width: 10rem;
-}
 
 .contactInfo{
     display: flex;
@@ -432,7 +426,7 @@ section {
     height: var(--size);
     display: flex;
     position: fixed;
-    right: 2rem;
+    right: 1rem;
     bottom: 6.5rem;
     z-index: 10;
     border-radius: 50%;
@@ -458,3 +452,80 @@ section {
     visibility: visible;
     opacity: 1;
   }
+
+  @media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navBar a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .cover-content h2{
+        font-size: 1em;
+    }
+
+    .cover-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer{
+        font-size: 0.65rem;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    .contactInfo{
+        column-gap: 0.8rem;
+    }
+
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .cover-content h2{
+        font-size: 0.8em;
+    }
+
+    .cover-content h3{
+        font-size: 1.4em;
+    }
+
+    .contactContent{
+        width: 95%;
+    }
+
+    .logo {
+        font-size: 0.85rem;
+    }
+
+    .navBar{
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
+
