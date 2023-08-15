@@ -293,6 +293,26 @@ section {
     text-decoration: none;
     font-family: var(--title-font);
     color: var(--title-color);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.sectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.sectionSubTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 2.5rem;
 }
 
 .contactForm{
@@ -360,4 +380,48 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #0a49f6;
+}
+
+.contactContent{
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    width: 50%;
+}
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .card{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 2rem;
+    width: 10rem;
+}
+
+.contactInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem;
 }
