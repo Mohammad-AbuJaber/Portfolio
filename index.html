@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-USA">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -50,9 +50,34 @@
         </div>
     </section>
 
+
+    <section class="about section" id="aboutMe">
+        <div class="card2">
+            <div class="img"></div>
+            <p class="info">I am Mohammad AbuJaber, I am currently a 4th year student studying computer system engineering at Birzeit
+                University. I am a very ambitious person. One of my greatest strengths is my ability to work
+                effectively in a team environment. I enjoy working with Python, which I find to be a very powerful
+                language. I am also skilled in data structures and Bash (Unix Shell). I am particularly drawn to
+                projects that involve connecting my code to hardware. I find it fascinating to work on projects that
+                involve integrating software and hardware to create real-world solutions. I believe that this
+                combination of software and hardware skills will serve me well in my future career. One of my core
+                beliefs is that continuous self-improvement is key to success, and I enjoy developing my knowledge
+                and skills to stay ahead of the curve in this rapidly changing field.</p>
+            <a href="assets/CV_Mohammad_AbuJaber.pdf" download="CV_Mohammad_AbuJaber">
+                <button type="button" class="button">
+                    <span class="button__text">Download CV</span>
+                    <span class="button__icon"><svg class="svg" data-name="Layer 2" id="bdd05811-e15d-428c-bb53-8661459f9307" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+                  </button>
+            </a>
+          </div>
+        
+    </section>
+
+
+
+
     <section class="contact section" id="contact">
         <h2 class="sectionTitle">Contact Me</h2>
-        <span class="sectionSubTitle">Get in Touch</span>
 
 
         <div class="contactContent">
@@ -60,7 +85,7 @@
                 <i class="ri-send-plane-line"></i> Write me what you want
             </h3>
 
-            <form action="" class="contactForm" id="contactForm">
+            <form action="https://httpbin.org/post" method="post" class="contactForm" id="contactForm">
 
                 <div class="contactFormDiv">
                     <label class="contactFormTag">Name</label>
@@ -82,54 +107,50 @@
                 </div>
 
                 <button type="submit" id="sendButton" class="sendButton">
-                    <div class="svg-wrapper-1">
-                        <div class="svg-wrapper">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </div>
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                            fill="currentColor"></path>
+                    </svg>
                     <span>Send</span>
                 </button>
 
             </form>
         </div>
-
-        </div>
     </section>
 
-
-
     <a class="back-to-top js-back-to-top" href="#" data-offset="100">
-  <svg class="cd-icon" viewBox="0 0 20 20">
-    <polyline points="2 13 10 5 18 13" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  </svg>
-</a>
+        <svg class="cd-icon" viewBox="0 0 20 20">
+            <polyline points="2 13 10 5 18 13" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" />
+        </svg>
+    </a>
 
     <script src="assets/main.js"></script>
+
+    <footer class="footer">
+        <p class="footer-title">Copyrights &COPY; <span>Mohammad AbuJaber</span></p>
+
+        <div class="contactInfo">
+            <div class="contactData">
+                <a href="mailto:mohammadabujaber2001@gmail.com" class="contactTitle" id="Gmail" target="_blank"><i
+                        class="fa-regular fa-envelope"></i></a>
+            </div>
+
+            <div class="contactData">
+                <a href="https://wa.me/+970599745046/?text=Your%20projects%20capture%20my%20attention."
+                    class="contactTitle" id="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <div class="contactData">
+                <a href="tel:+970599745046" class="contactTitle" target="_blank"><i class="ri-phone-line"
+                        id="Phone"></i></a>
+            </div>
+
+        </div>
+    </footer>
+
 </body>
-
-<footer class="footer">
-    <p class="footer-title">Copyrights &COPY; <span>Mohammad AbuJaber</span></p>
-
-    <div class="contactInfo">
-        <div class="contactData">
-            <a href="mailto:mohammadabujaber2001@gmail.com" class="contactTitle" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-        </div>
-
-        <div class="contactData">
-            <a href="https://wa.me/+970599745046/?text=Your%20projects%20capture%20my%20attention." class="contactTitle"
-                target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-
-        <div class="contactData">
-            <a href="tel:+970599745046" class="contactTitle" target="_blank"><i class="ri-phone-line"></i></a>
-        </div>
-
-    </div>
-</footer>
 
 </html>

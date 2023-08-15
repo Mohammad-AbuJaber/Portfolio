@@ -40,6 +40,7 @@ header {
 
 section {
     padding: 100px 200px;
+    margin-bottom: 200px;
 }
 
 .cover {
@@ -201,7 +202,7 @@ section {
     transition: transform 0.3s ease-in-out;
   }
   
-  #sendButton:hover .svg-wrapper {
+  #sendButton:hover{
     animation: fly-1 0.6s ease-in-out infinite alternate;
   }
   
@@ -234,12 +235,6 @@ section {
     column-gap: 0.5rem;
 }
 
-/* #contact,
-.sectionTitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
   
 .contactContainer {
     row-gap: 3.5rem;
@@ -303,16 +298,7 @@ section {
     align-items: center;
     column-gap: 0.5rem;
     font-size: 2.5rem;
-}
-
-.sectionSubTitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #000000;
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
 }
 
 .contactForm{
@@ -342,6 +328,18 @@ section {
     z-index: 1;
 }
 
+#Gmail:hover{
+    color: #d14836;
+}
+
+#WhatsApp:hover{
+    color: #25d366;
+}
+
+#Phone:hover{
+    color: #3a6cf4;
+}
+
 .contactFormTag {
     position: absolute;
     top: -0.75rem;
@@ -351,6 +349,7 @@ section {
     color: #0059f7;
     font-size: smaller;
     padding: 0.35rem;
+    font-weight: 600;
 }
 
 .contactFormArea{
@@ -387,7 +386,6 @@ section {
     display: block;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2.5rem;
     width: 50%;
 }
 
@@ -399,7 +397,6 @@ section {
     justify-content: space-between;
     align-items: center;
     height: 90px;
-    margin-bottom: 0;
 }
 
 .footer-title {
@@ -437,7 +434,7 @@ section {
   }
   
   .back-to-top:hover {
-    background-color: hsl(230, 94%, 25%);
+    background-color: #0a49f6;
     transform: translateY(-10%);
   }
   
@@ -529,3 +526,123 @@ section {
     }
 }
 
+.card2 {
+    max-width: 90%; /* Adjust as needed */
+    width: 79%;
+    background: #171717;
+    transition: 0.5s ease-in-out;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: space-between; /* Align items with space between them */
+    padding: 1em;
+    margin: 2rem auto; /* Center horizontally and adjust spacing */
+    /* Adjust the following for better spacing */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card2 span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 1.2em; /* Increase font size for better readability */
+}
+
+.card2 .info {
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    font-size: 1em; /* Increase font size for better readability */
+    margin: 1em 0.5em; /* Adjust vertical margin for better spacing */
+}
+
+.card2 .img {
+    width: 8rem; /* Adjust image size */
+    height: 8rem; /* Adjust image size */
+    background-image: url("images/me.jpeg");
+    background-size: cover;
+    border-radius: 50%; /* Circular image */
+    margin: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; /* Add some bottom margin for spacing */
+}
+
+.card2 button:hover {
+    background: #0a49f6;
+    color: white;
+}
+
+.card2 a{
+    text-decoration: none;
+}
+
+.button {
+    --main-focus: #2d8cf0;
+    --font-color: #dedede;
+    --bg-color-sub: #222;
+    --bg-color: #323232;
+    --main-color: #dedede;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+
+.button .button__text {
+    text-decoration: none;
+    transform: translateX(30px); /* Adjust translation for wider button */
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.button .button__icon {
+    position: absolute;
+    transform: translateX(166px); /* Adjust translation for wider button */
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .svg {
+    width: 20px;
+    fill: var(--main-color);
+}
+
+.button:hover {
+    background: var(--bg-color);
+}
+
+.button:hover .button__text {
+    color: transparent;
+}
+
+.button:hover .button__icon {
+    width: 198px; /* Adjust width for wider button */
+    transform: translateX(0);
+}
+
+.button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+}
