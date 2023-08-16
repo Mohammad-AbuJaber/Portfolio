@@ -456,6 +456,13 @@ section {
         padding-left: 10px;
     }
 
+    .cover {
+        background-size: cover;
+        background-position: right;
+        background-image: url("images/smallBackgroundCover.png");
+        right: 75px;
+    }
+
     .title {
         font-size: 1.8em;
     }
@@ -498,6 +505,13 @@ section {
 }
 
 @media (max-width:641px) {
+    .cover {
+        background-size: cover;
+        background-position: right;
+        background-image: url("images/smallBackgroundCover.png");
+        right: 75px;
+    }
+
     body {
         font-size: 12px;
     }
