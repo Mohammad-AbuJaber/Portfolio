@@ -66,7 +66,7 @@ Feel free to reach out to me for any inquiries, collaborations, or discussions:
 - WhatsApp: [+970599745046](https://wa.me/+970599745046/?text=Your%20projects%20capture%20my%20attention.)
 - Phone: [+970599745046](tel:+970599745046)
 
-You can also visit [my portfolio website](https://mohammad-abujaber.github.io/Portfolio/) to learn more.
+You can also visit <a href="https://mohammad-abujaber.github.io/Portfolio/" target="_blank">my portfolio website</a> to learn more.
 
 ---
 
