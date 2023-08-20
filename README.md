@@ -62,9 +62,8 @@ For more projects, visit my [gitHub account](https://github.com/Mohammad-AbuJabe
 
 Feel free to reach out to me for any inquiries, collaborations, or discussions:
 
-- Email: [mohammadabujaber2001@gmail.com](mailto:mohammadabujaber2001@gmail.com)
-- WhatsApp: [+970599745046](https://wa.me/+970599745046/?text=Your%20projects%20capture%20my%20attention.)
-- Phone: [+970599745046](tel:+970599745046)
+- [Send me an Email](mailto:mohammadabujaber2001@gmail.com)
+- [Contact using WhatsApp](https://wa.me/+970599745046/?text=Your%20projects%20capture%20my%20attention.)
 
 You can also visit <a href="https://mohammad-abujaber.github.io/Portfolio/" target="_blank">my portfolio website</a> to learn more.
 
