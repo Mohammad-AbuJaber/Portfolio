@@ -1,0 +1,283 @@
+.socialCard {
+    display: flex;
+    height: 4.5rem;
+    width: 17rem;
+}
+
+.socialCard svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.socialCard .gitHub,
+.socialCard .linkedIn,
+.socialCard .facebook,
+.socialCard .medium {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 80%;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 3rem;
+}
+
+.socialCard svg {
+    transform: scale(1);
+}
+
+.socialCard .gitHub:hover {
+    background-color: #1a1e22;
+    animation: bounce_613 0.4s linear;
+}
+
+.socialCard .linkedIn:hover {
+    background-color: #0a66c2;
+    animation: bounce_613 0.4s linear;
+}
+
+.socialCard .facebook:hover {
+    background-color: #0059f7;
+    animation: bounce_613 0.4s linear;
+}
+
+.socialCard .medium:hover {
+    background-color: #292929;
+    animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.aboutMeCard {
+    max-width: 90%;
+    width: 60rem;
+    background: #171717;
+    transition: 0.5s ease-in-out;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.aboutMeCard span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.aboutMeCard .info {
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    font-size: 1em;
+    margin: 1em 0.5em;
+}
+
+.aboutMeCard .img {
+    width: 8rem;
+    height: 8rem;
+    background-image: url("images/me.jpeg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.aboutMeCard a {
+    text-decoration: none;
+}
+
+.button {
+    --main-focus: #2d8cf0;
+    --font-color: #dedede;
+    --bg-color-sub: #222;
+    --bg-color: #323232;
+    --main-color: #dedede;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.button,
+.button__icon,
+.button__text {
+    transition: all 0.3s;
+}
+
+.button .button__text {
+    text-decoration: none;
+    transform: translateX(30px);
+    font-size: medium;
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.button .button__icon {
+    position: absolute;
+    transform: translateX(166px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .svg {
+    width: 20px;
+    fill: var(--main-color);
+}
+
+.button:hover {
+    background: var(--bg-color);
+}
+
+.button:hover .button__text {
+    color: transparent;
+}
+
+.button:hover .button__icon {
+    width: 198px;
+    transform: translateX(0);
+}
+
+.button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+}
+
+.skillsCardContainer {
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    border-radius: 2rem;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 10rem;
+}
+
+.skillsCard {
+    display: block;
+    width: 50rem;
+    height: 20rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skillsCardHeader {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.projectCard {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.projectCard:hover {
+    transform: scale(1.1);
+}
+
+.projectCard:hover .projectImage {
+    opacity: 0.9;
+}
+
+.projectImage img {
+    width: 100%;
+    height: 16rem;
+}
+
+.projectInfo {
+    padding: 1em;
+}
+
+.projectCategory {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.projectTitle {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.moreDetails {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.moreDetails:hover {
+    color: #601cfc;
+}
